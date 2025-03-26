@@ -137,6 +137,7 @@ int main()
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");//fim do menu
 				
 		scanf("%d", & opcao); //armazenando a escolha do usuÃ¡rio
@@ -156,6 +157,11 @@ int main()
 			case 3:// Selecionando a opção 3
 			deletar();// Chamada de funções
 			break;// Finalizando a função
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
 		
 			default:// Função para informar o usuário que a opção não está disponível no sistema
 			printf("Essa opção não está disponivel!\n");// Mensagem que aparece ao usuário caso o sistema não reconheça a opção escolhida
